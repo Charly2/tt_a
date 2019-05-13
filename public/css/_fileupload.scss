@@ -1,0 +1,222 @@
+.filelists {
+  margin: 20px 0;
+}
+
+.filelists h5 {
+  margin: 10px 0 0;
+}
+
+.filelists .cancel_all {
+  color: red;
+  cursor: pointer;
+  clear: both;
+  font-size: 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.filelist {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.filelist li {
+  background: #fff;
+  border-bottom: 1px solid #ECEFF1;
+  font-size: 14px;
+  list-style: none;
+  padding: 5px;
+  position: relative;
+}
+
+.filelist li:before {
+  display: none !important;
+}
+/* main site demos */
+
+.filelist li .bar {
+  background: #eceff1;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: 0;
+  -webkit-transition: width 0.1s linear;
+  transition: width 0.1s linear;
+}
+
+.filelist li .content {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.filelist li .file {
+  color: #455A64;
+  float: left;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+  white-space: nowrap;
+}
+
+.filelist li .progress {
+  color: #B0BEC5;
+  display: block;
+  float: right;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.filelist li .cancel {
+  color: red;
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-size: 10px;
+  margin: 0 0 0 10px;
+  text-transform: uppercase;
+}
+
+.filelist li.error .file {
+  color: red;
+}
+
+.filelist li.error .progress {
+  color: red;
+}
+
+.filelist li.error .cancel {
+  display: none;
+}
+
+.fs-upload.fs-light .fs-upload-target {
+  background: #fff;
+  border: 3px dashed #607d8b;
+  border-radius: 2px;
+  color: #455a64;
+  font-size: 14px;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+  -webkit-transition: background .15s linear, border .15s linear, color .15s linear, opacity .15s linear;
+  transition: background .15s linear, border .15s linear, color .15s linear, opacity .15s linear
+}
+.fs-light.fs-upload-dropping .fs-upload-target,
+.fs-light.fs-upload-focus .fs-upload-target,
+.no-touchevents .fs-light:hover .fs-upload-target {
+  background: #cfd8dc;
+  border-color: #546e7a;
+  color: #263238
+}
+.fs-light.fs-upload-disabled {
+  opacity: .5
+}
+.fs-light.fs-upload-disabled .fs-upload-target,
+.fs-light.fs-upload-disabled.fs-upload-dropping .fs-upload-target,
+.fs-light.fs-upload-disabled.fs-upload-focus .fs-upload-target,
+.no-touchevents .fs-light.fs-upload-disabled.fs-upload-dropping:hover .fs-upload-target,
+.no-touchevents .fs-light.fs-upload-disabled:hover .fs-upload-target {
+  background: #fff;
+  border-color: #607d8b;
+  color: #455a64
+}
+.fs-viewer {
+  position: relative
+}
+.fs-viewer.fs-light .fs-viewer-source {
+  display: none!important
+}
+.fs-viewer.fs-light .fs-viewer-wrapper {
+  position: relative;
+  background: #eceff1;
+  overflow: hidden;
+  -webkit-transition: none;
+  transition: none;
+  height: 300px
+}
+.fs-viewer.fs-light .fs-viewer-viewport {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px
+}
+.fs-viewer.fs-light .fs-viewer-container {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  opacity: 1;
+  -webkit-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease
+}
+.fs-viewer.fs-light.fs-viewer-loading .fs-viewer-container {
+  opacity: 0
+}
+.fs-viewer.fs-light.fs-viewer-image {
+  position: absolute
+}
+.fs-viewer.fs-light.fs-viewer-scaling .fs-viewer-container {
+  -webkit-transition: none!important;
+  transition: none!important
+}
+.fs-viewer.fs-light.fs-viewer-scaling .fs-viewer-image {
+  -webkit-transition: none!important;
+  transition: none!important
+}
+.fs-viewer.fs-light .fs-viewer-controls {
+  width: 70px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 4;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 5px rgba(20, 26, 30, .25);
+  box-shadow: 0 0 5px rgba(20, 26, 30, .25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 5px
+}
+.fs-viewer.fs-light .fs-viewer-control {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  color: #546e7a;
+  display: block;
+  overflow: hidden;
+  text-indent: 200%;
+  white-space: nowrap
+}
+.fs-viewer.fs-light .fs-viewer-control:after,
+.fs-viewer.fs-light .fs-viewer-control:before {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  margin: auto
+}
+
+
+/**/

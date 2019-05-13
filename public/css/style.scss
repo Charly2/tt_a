@@ -1,0 +1,180 @@
+body{
+  overflow-x: hidden;
+}
+
+.nav-gob{
+  margin-bottom: 45px;
+}
+.navbar{
+  border-radius: 0!important;
+  margin-bottom: 1px;
+}
+
+body > .container{
+  min-height: 80vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo_h{
+  display: block;
+  height: 52px;
+  margin-top: -13px;
+}
+.noPadding{
+  padding: 0!important;
+}
+.headerLN{
+  background-image: url("https://www.ipn.mx/assets/files/main/img/cover-simple-portal.jpg");
+  background-size: cover;
+  .linklandinipn{
+    display: block;
+    text-align: center;
+    p{
+      color: #5E2129;
+      margin-bottom: 0;
+    }
+    p.ipnLogo-slogan{
+      margin-bottom: 20px;
+      color: #5E2129;
+    }
+  }
+}
+
+.gob-nav.dgm-navbar{
+  position: relative;
+}
+.hidden{
+  height: 0!important;
+  overflow: hidden!important;
+  transition: all .5s;
+}
+.navbar-fixed-top{
+  position: sticky;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  top: 0;
+  border-width: 0 0 1px;
+  transition: all 0s;
+}
+
+.headerform{
+  background: #6b2848;
+  color: white;
+  line-height: 2.4;
+  padding: 0 15px;
+  border: 1px solid #6b2848;
+
+}
+/*
+
+div[data-acc-content] { display: none;  }
+div[data-acc-step]:not(.open) { background: #f2f2f2;  }
+div[data-acc-step]:not(.open) h5 { color: #777;  }
+div[data-acc-step]:not(.open) .badge-primary { background: #ccc;  }
+
+*/
+
+
+label{
+  margin-bottom: 0;
+}
+
+.rowjc{
+  padding: 0 15px;
+  .form-group{
+    margin-bottom: 2px!important;
+  }
+}
+
+.list-group-item{
+  border: 1px solid white;
+}
+.btnnet{
+  margin-right: 14px;
+  margin-bottom: 15px;
+}
+.btnbac{
+  margin-left: 15px;
+}
+
+.lw100{
+  display: block;
+  width: 100%;
+}
+.lw100+ input{
+ border-bottom-left-radius: 6px!important;
+ border-top-left-radius: 6px!important;
+}
+.hide{
+  display: none;
+}
+.w180{
+  width: 108%;
+}
+.subtitlereg{
+  margin: 5px 15px 0px 15px;
+  display: block;
+  font-weight: 700;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:checked, .btn-primary:active{
+  box-shadow: 0 0 0 0.2rem rgba(#6b2848,.5);
+}
+.lavllo{
+  color: #34495e;
+  font-size: 18px;
+  margin-left: 5px;
+  display: block;
+  font-weight: 700;
+  line-height: 2.2;
+}
+
+
+@import "medias";
+@import "landing";
+
+
+
+.headerform2{
+  background: #21416b;
+  color: white;
+  line-height: 2.4;
+  padding: 0 15px;
+  border: 1px solid #21416b;
+}
+
+
+.dropzone .dz-preview .dz-image{
+  width: 60px!important;
+  height: 60px!important;
+  margin: auto;
+}
+
+.dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg{
+  width: 25px!important;
+  height: 25px!important;
+}
+
+.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark{
+  top: 45px!important;
+  left: 80px!important;
+}
+
+.dropzone .dz-preview .dz-error-message{
+  top: 75px!important;
+  left: -45px!important;
+  width: 140px!important;
+}
+
+.dropzone .dz-preview{
+  width: 130px;
+}
+.dropzone {
+  min-height: unset;
+  padding: 0;
+}
+
+.form-control[disabled]{
+  color: black!important;
+}
